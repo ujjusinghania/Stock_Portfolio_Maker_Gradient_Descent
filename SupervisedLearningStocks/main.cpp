@@ -65,6 +65,6 @@ int main() {
     cout << endl << endl << companyA << endl << endl;
     vector<double> theta = companyA.performGradientDescent();
     for (size_t thetaIndex = 0; thetaIndex < theta.size(); thetaIndex++) {
-        cout << "theta[" << thetaIndex << "] = " << theta[thetaIndex] << endl;
+        cout << showpos << theta[thetaIndex] << noshowpos << " * ";
     }
 }

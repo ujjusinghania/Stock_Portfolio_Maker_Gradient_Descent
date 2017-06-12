@@ -22,7 +22,6 @@ class Hypothesis {
     std::vector<double> thetaValues;
     size_t numberOfFeatures;
     size_t numberOfTrainingExamples;
-    std::string companyName;
     Constants constantValues;
     
     // To get computed Y - multiplication between theta and respective features of a given training example.

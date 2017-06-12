@@ -9,9 +9,6 @@
 #include "Hypothesis.hpp"
 #include "TrainingExample.hpp"
 #include "ConstantValues.hpp"
-#include <stdio.h>
-#include <vector>
-#include <iostream>
 #include <math.h>
 using namespace std;
 
@@ -36,6 +33,7 @@ double Hypothesis::costFunction(int thetaNumber, const std::vector<double>& newT
     for (size_t i = 0; i < numberOfTrainingExamples; i++) {
         sum += (getComputedY(newThetaValues, trainingExamples[i].getAllFeatures()) - trainingExamples[i].getYValue()) * trainingExamples[i].getAllFeatures()[thetaNumber];
     }
+  //  cout << sum << endl;
     return sum;
 }
 
@@ -69,7 +67,9 @@ std::vector<double> Hypothesis::performGradientDescent() {
         for (size_t thetaIndex = 0; thetaIndex < numberOfFeatures; thetaIndex++) {
             double absValue = fabs(thetaValues[thetaIndex] - newThetaValues[thetaIndex]);
             costFunctionMinimized = costFunctionMinimized && absValue < constantValues.benchmark;
+            cout << absValue << " ";
         }
+        cout << endl;
         thetaValues = newThetaValues;
     }
     return thetaValues;
