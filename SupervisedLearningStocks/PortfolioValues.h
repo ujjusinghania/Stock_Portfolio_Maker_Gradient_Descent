@@ -11,11 +11,19 @@
 
 #include <string>
 
-struct Constants {
+struct Data {
     
-    vector<std::string> CSVNames = {
-        
-    }
+    std::vector<std::string> CSVNames = {
+//        "BharatPetroleum",
+//        "AbanOffshore",
+//        "CoalIndia",
+//        "GujaratMineral",
+//        "HindustanPetroleum",
+//        "IndianOil",
+//        "OilIndia",
+//        "OilNaturalGasCorp",
+        "RelianceIndustries"
+    };
     
 };
 

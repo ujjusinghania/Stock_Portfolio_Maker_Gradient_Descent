@@ -16,29 +16,25 @@
 class DataMatrix {
     
 public:
-    DataMatrix(bool valid);
-    DataMatrix(const int row, const int column);
-    // Add a constructor that initialises the value of each element to be equal to x
     DataMatrix(const int row, const int column, const int value);
-    DataMatrix(const std::string& fileName);
+//    DataMatrix(const std::string& fileName);
+    DataMatrix(const std::vector<std::vector<double>>& values);
+    DataMatrix(const int row, const int column, const std::vector<std::vector<double>>& values);
+
+    DataMatrix transpose();
+//    DataMatrix inverse();
+
+    double operator()(const int& row, const int& column) const;
+    
     friend std::ostream& operator<<(std::ostream& outputStream, const DataMatrix& dataMatrix);
-    double operator()(const int& row, const int& column);
-    
-    // Add + operator, += operator, - operator, -= operator
-    // Check if rows and colums are equal before performing any calculation.
-    
-     DataMatrix& operator+=(const DataMatrix& right);
-     friend DataMatrix operator+(const DataMatrix& left, const DataMatrix& right);
-     DataMatrix& operator-=(const DataMatrix& right);
-     friend DataMatrix operator-(const DataMatrix& left, const DataMatrix& right);
-     
+    friend DataMatrix operator*(const DataMatrix& left, const DataMatrix& right);
     
 private:
     std::vector<std::vector<double>> valueMatrix;
     int row;
     int column;
-    bool isValid;
-    
 };
+
+DataMatrix getUnitMatrix(int size);
 
 #endif /* DataMatrix_hpp */
