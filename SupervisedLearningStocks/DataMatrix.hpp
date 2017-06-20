@@ -22,12 +22,13 @@ public:
     DataMatrix(const int row, const int column, const std::vector<std::vector<double>>& values);
 
     DataMatrix transpose();
-//    DataMatrix inverse();
+    DataMatrix inverse();
 
     double operator()(const int& row, const int& column) const;
     
     friend std::ostream& operator<<(std::ostream& outputStream, const DataMatrix& dataMatrix);
     friend DataMatrix operator*(const DataMatrix& left, const DataMatrix& right);
+    std::vector<double> getThetaValues();
     
 private:
     std::vector<std::vector<double>> valueMatrix;

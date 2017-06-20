@@ -16,64 +16,9 @@
 #include <sstream>
 using namespace std;
 
-/*
- 
- Function that assists Batch Gradient Descent.
- 
- Allows the user to pass in a .csv filename - the function reads data from the .csv file
- and converts it into a vector<TrainingExample>, which can then be converted into a
- Hypothesis.
- 
- */
 
-vector<TrainingExample> readDataFromFile(const string& fileName) {
+vector<vector<double>> readDataFromFile(const string& fileName) {
     ifstream fileInput (fileName);
-    
-    if (!fileInput) {
-        cout << "Data from the file could not be read." << endl;
-        exit(1);
-    }
-    
-    vector<TrainingExample> hypothesisData;
-    vector<double> dataValues;
-    string value = "";
-    
-    // To check for Byte Order Mark (BOM).
-    
-    char bomCheck[4] = {0};
-    fileInput.read(bomCheck, 3);
-    if (strcmp(bomCheck, "\xEF\xBB\xBF") != 0) {
-        fileInput.seekg(0);
-    }
-    
-    while (fileInput >> value) {
-        value = value + ",end,";
-        string tableValue;
-        stringstream ss = stringstream(value);
-        while (getline(ss, tableValue, ',')) {
-            if (tableValue == "end") {
-                double target = dataValues.back();
-                dataValues.pop_back();
-                TrainingExample dataExample = TrainingExample(dataValues, target);
-                hypothesisData.push_back(dataExample);
-                dataValues = {};
-                continue;
-            }
-            
-            try {
-                dataValues.push_back(stod(tableValue));
-            }
-            catch (invalid_argument) {
-                cout << "Invalid";
-                continue;
-            }
-        }
-    }
-    return hypothesisData;
-}
-
-vector<vector<double>> readPredictionDataFromFile() {
-    ifstream fileInput ("PredictionData.csv");
     
     if (!fileInput) {
         cout << "Data from the file could not be read." << endl;
@@ -115,36 +60,35 @@ vector<vector<double>> readPredictionDataFromFile() {
     return predictionData;
 }
 
-
 int main() {
-//    Data excelSheetNames;
-//    vector<CompanyForecast> listOfCompanies;
-//    for (size_t index = 0; index < excelSheetNames.CSVNames.size(); index++) {
-//        vector<TrainingExample> trainingExamples = readDataFromFile(excelSheetNames.CSVNames[index]+".csv");
-//        Hypothesis mockCompany = Hypothesis(trainingExamples);
-//        cout << endl << endl << mockCompany << endl << endl;
-//        vector<double> theta = mockCompany.performGradientDescent();
-//        cout << endl << endl << endl;
-//    
-//        /*
-//        for (size_t thetaIndex = 0; thetaIndex < theta.size(); thetaIndex++) {
-//            cout << showpos << theta[thetaIndex] << noshowpos << " * ";
-//        }
-//        */
-//        
-//        listOfCompanies.push_back(CompanyForecast(theta, excelSheetNames.CSVNames[index]));
-//    }
-//    
-//    vector<vector<double>> predictionData = readPredictionDataFromFile();
-//    
-//    for (size_t printIndex = 0; printIndex < listOfCompanies.size(); printIndex++) {
-//        cout << listOfCompanies[printIndex] << endl << endl;
-//        cout << "Predicted Value: " << listOfCompanies[printIndex].returnCompanyForecast(predictionData[printIndex]);
-//        cout << "----------------------------------------" << endl << endl;
-//    }
     
-    DataMatrix test = DataMatrix({{2,2}});
-    DataMatrix test2 = DataMatrix({{3}, {3}});
+    Data values;
+    vector<string> fileNames = values.CSVNames;
+    vector<CompanyForecast> listOfCompanies;
     
-    cout << test << endl << endl << test2 << endl << endl << test * test2 << endl;
+    for (int loopCounter = 0; loopCounter < fileNames.size(); loopCounter++) {
+        vector<vector<double>> dataForPredictionModel = readDataFromFile(fileNames[loopCounter]+".csv");
+        vector<vector<double>> yValues;
+        for (int i = 0; i < dataForPredictionModel.size(); i++) {
+            vector<double> test;
+            test.push_back(dataForPredictionModel[i].back());
+            dataForPredictionModel[i].pop_back();
+            yValues.push_back(test);
+        }
+        
+        DataMatrix y = DataMatrix(yValues);
+        DataMatrix x = DataMatrix(dataForPredictionModel);
+        
+        listOfCompanies.push_back(CompanyForecast((((x.transpose() * x).inverse() * x.transpose()) * y).getThetaValues(), fileNames[loopCounter]));
+    }
+    
+    vector<vector<double>> predictionData = readDataFromFile(values.predictionDataCSV);
+    vector<double> predictedValues;
+    
+    for (int forecastIndex = 0; forecastIndex < fileNames.size(); forecastIndex++) {
+        cout << listOfCompanies[forecastIndex] << endl << endl;
+        predictedValues.push_back(listOfCompanies[forecastIndex].returnCompanyForecast(predictionData[forecastIndex]));
+        cout << "Predicted Value: " << listOfCompanies[forecastIndex].returnCompanyForecast(predictionData[forecastIndex]) << endl;
+        cout << "----------------------------------------" << endl << endl;
+    }
 }

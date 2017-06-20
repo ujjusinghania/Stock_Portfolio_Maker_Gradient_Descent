@@ -14,16 +14,18 @@
 struct Data {
     
     std::vector<std::string> CSVNames = {
-//        "BharatPetroleum",
-//        "AbanOffshore",
-//        "CoalIndia",
-//        "GujaratMineral",
-//        "HindustanPetroleum",
-//        "IndianOil",
-//        "OilIndia",
-//        "OilNaturalGasCorp",
+        "BharatPetroleum",
+        "AbanOffshore",
+        "CoalIndia",
+        "GujaratMineral",
+        "HindustanPetroleum",
+        "IndianOil",
+        "OilIndia",
+        "OilNaturalGasCorp",
         "RelianceIndustries"
     };
+    
+    std::string predictionDataCSV = "PredictionData.csv";
     
 };
 

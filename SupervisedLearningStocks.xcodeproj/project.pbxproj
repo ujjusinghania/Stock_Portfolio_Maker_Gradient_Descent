@@ -28,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		D910CC3E1EE7E10F00849E59 /* README.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = README.rtf; sourceTree = "<group>"; };
+		D93966C31EF904EF00E6B257 /* Tester Code.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "Tester Code.rtf"; sourceTree = "<group>"; };
 		D9920F371EEE43E60085035D /* CompanyForecast.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CompanyForecast.cpp; sourceTree = "<group>"; };
 		D9920F381EEE43E60085035D /* CompanyForecast.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CompanyForecast.hpp; sourceTree = "<group>"; };
 		D9920F3B1EEE4C270085035D /* PortfolioValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PortfolioValues.h; sourceTree = "<group>"; };
@@ -53,6 +54,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D93966C41EF9276700E6B257 /* Prediction Model Data Types */ = {
+			isa = PBXGroup;
+			children = (
+				D9920F371EEE43E60085035D /* CompanyForecast.cpp */,
+				D9920F381EEE43E60085035D /* CompanyForecast.hpp */,
+				D9920F3B1EEE4C270085035D /* PortfolioValues.h */,
+			);
+			name = "Prediction Model Data Types";
+			sourceTree = "<group>";
+		};
 		D9E73C9C1EE684B000693AD9 = {
 			isa = PBXGroup;
 			children = (
@@ -73,23 +84,21 @@
 			isa = PBXGroup;
 			children = (
 				D9E73CA81EE684B000693AD9 /* main.cpp */,
+				D9E73CB21EE684CC00693AD9 /* DataMatrix - Normalized Batch Gradient Descent */,
 				D9F68FA81EE90422000AA8E2 /* MLDataTypes - Batch Gradient Descent */,
-				D9E73CB21EE684CC00693AD9 /* DataMatrix */,
+				D93966C41EF9276700E6B257 /* Prediction Model Data Types */,
 				D910CC3E1EE7E10F00849E59 /* README.rtf */,
-				D9920F371EEE43E60085035D /* CompanyForecast.cpp */,
-				D9920F381EEE43E60085035D /* CompanyForecast.hpp */,
-				D9920F3B1EEE4C270085035D /* PortfolioValues.h */,
 			);
 			path = SupervisedLearningStocks;
 			sourceTree = "<group>";
 		};
-		D9E73CB21EE684CC00693AD9 /* DataMatrix */ = {
+		D9E73CB21EE684CC00693AD9 /* DataMatrix - Normalized Batch Gradient Descent */ = {
 			isa = PBXGroup;
 			children = (
 				D9E73CAF1EE684C800693AD9 /* DataMatrix.cpp */,
 				D9E73CB01EE684C800693AD9 /* DataMatrix.hpp */,
 			);
-			name = DataMatrix;
+			name = "DataMatrix - Normalized Batch Gradient Descent";
 			sourceTree = "<group>";
 		};
 		D9F68FA81EE90422000AA8E2 /* MLDataTypes - Batch Gradient Descent */ = {
@@ -100,6 +109,7 @@
 				D9F68FAC1EE90444000AA8E2 /* Hypothesis.cpp */,
 				D9F68FAD1EE90444000AA8E2 /* Hypothesis.hpp */,
 				D9F68FB21EE91AD5000AA8E2 /* ConstantValues.hpp */,
+				D93966C31EF904EF00E6B257 /* Tester Code.rtf */,
 			);
 			name = "MLDataTypes - Batch Gradient Descent";
 			sourceTree = "<group>";

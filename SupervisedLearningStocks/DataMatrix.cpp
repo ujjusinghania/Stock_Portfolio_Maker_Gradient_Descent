@@ -74,9 +74,35 @@ DataMatrix DataMatrix::transpose() {
     return returnValue;
 }
 
-//DataMatrix inverse() {
-//    
-//}
+DataMatrix DataMatrix::inverse() {
+    if (row != column) {
+        cout << "Inverse operation could not be completed - Dimension Mismatch (Row and Column are not equal)." << endl;
+        exit(92);
+    }
+    
+    vector<vector<double>> inverseMatrix = getUnitMatrix(row).valueMatrix;
+    vector<vector<double>> copyValueMatrix = valueMatrix;
+    
+    for (int RREFCounter = 0; RREFCounter < row; RREFCounter++) {
+        double divisionNumber = copyValueMatrix[RREFCounter][RREFCounter];
+        for (int divisionCounter = 0; divisionCounter < row; divisionCounter++) {
+            inverseMatrix[RREFCounter][divisionCounter] = inverseMatrix[RREFCounter][divisionCounter]/divisionNumber;
+            copyValueMatrix[RREFCounter][divisionCounter] = copyValueMatrix[RREFCounter][divisionCounter]/divisionNumber;
+        }
+        for (int inverseRowCounter = 0; inverseRowCounter < row; inverseRowCounter++) {
+            if (inverseRowCounter == RREFCounter) {
+                continue;
+            }
+            double multiplicationValue = copyValueMatrix[inverseRowCounter][RREFCounter];
+            for (int inverseColumnCounter = 0; inverseColumnCounter < row; inverseColumnCounter++) {
+                inverseMatrix[inverseRowCounter][inverseColumnCounter] -= inverseMatrix[RREFCounter][inverseColumnCounter] * multiplicationValue;
+                copyValueMatrix[inverseRowCounter][inverseColumnCounter] -= (copyValueMatrix[RREFCounter][inverseColumnCounter] * multiplicationValue);
+            }
+        }
+    }
+    cout << DataMatrix(copyValueMatrix) << endl << endl;
+    return DataMatrix(inverseMatrix);
+}
 
 DataMatrix getUnitMatrix(int size) {
     vector<vector<double>> returnValue = vector<vector<double>>(size, vector<double>(size, 0));
@@ -116,4 +142,12 @@ DataMatrix operator*(const DataMatrix& left, const DataMatrix& right) {
     }
     
     return DataMatrix(left.row, right.column, returnValueMatrix);
+}
+
+vector<double> DataMatrix::getThetaValues() {
+    vector<double> returnValue;
+    for (int i = 0; i < row; i++) {
+        returnValue.push_back((*this)(i,0));
+    }
+    return returnValue; 
 }
