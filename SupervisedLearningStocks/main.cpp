@@ -60,6 +60,25 @@ vector<vector<double>> readDataFromFile(const string& fileName) {
     return predictionData;
 }
 
+void showStockPortofolioPicks(vector<string>& companyNames, vector<double>& values) {
+    if (companyNames.size() != values.size()) {
+        cout << "Size of 'Company Names' Vector and 'Predicted Values' Vector is not the same - Size Mismatch." << endl << "Cannot perform portfolio operations on provided dataset vectors.";
+        return;
+    }
+    for (int i = 0; i < values.size()-1; i++) {
+        for (int j = 0; j < values.size()-1; j++) {
+            if (values[j] < values[j+1]) {
+                swap(values[j], values[j+1]);
+                swap(companyNames[j], companyNames[j+1]);
+            }
+        }
+    }
+    
+    for (int i = 0; i < values.size(); i++) {
+        cout << companyNames[i] << ":   " << values[i] << endl;
+    }
+}
+
 int main() {
     
     Data values;
@@ -86,9 +105,9 @@ int main() {
     vector<double> predictedValues;
     
     for (int forecastIndex = 0; forecastIndex < fileNames.size(); forecastIndex++) {
-        cout << listOfCompanies[forecastIndex] << endl << endl;
         predictedValues.push_back(listOfCompanies[forecastIndex].returnCompanyForecast(predictionData[forecastIndex]));
-        cout << "Predicted Value: " << listOfCompanies[forecastIndex].returnCompanyForecast(predictionData[forecastIndex]) << endl;
-        cout << "----------------------------------------" << endl << endl;
     }
+    
+    showStockPortofolioPicks(fileNames, predictedValues);
+    
 }

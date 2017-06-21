@@ -30,8 +30,8 @@ string CompanyForecast::getCompanyName() const {
 
 ostream& operator<<(ostream& outputStream, const CompanyForecast& company) {
     outputStream << company.getCompanyName() << ": ";
-    for (size_t i = 0; i < company.thetaValues.size(); i++) {
-        cout << showpos << company.thetaValues[i] << "* "; 
-    }
+//    for (size_t i = 0; i < company.thetaValues.size(); i++) {
+//        cout << showpos << company.thetaValues[i] << "* "; 
+//    }
     return outputStream;
 }
