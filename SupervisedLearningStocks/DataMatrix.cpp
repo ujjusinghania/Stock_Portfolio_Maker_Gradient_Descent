@@ -100,7 +100,6 @@ DataMatrix DataMatrix::inverse() {
             }
         }
     }
-    cout << DataMatrix(copyValueMatrix) << endl << endl;
     return DataMatrix(inverseMatrix);
 }
 

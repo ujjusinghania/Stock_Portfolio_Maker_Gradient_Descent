@@ -21,7 +21,7 @@ vector<vector<double>> readDataFromFile(const string& fileName) {
     ifstream fileInput (fileName);
     
     if (!fileInput) {
-        cout << "Data from the file could not be read." << endl;
+        cout << "Data from the file " << fileName << " could not be read." << endl;
         exit(1);
     }
     
@@ -52,8 +52,8 @@ vector<vector<double>> readDataFromFile(const string& fileName) {
                 dataValues.push_back(stod(tableValue));
             }
             catch (invalid_argument) {
-                cout << "Invalid";
-                continue;
+                cout << "Invalid Sheet: " << fileName;
+                exit(1);
             }
         }
     }
@@ -79,6 +79,29 @@ void showStockPortofolioPicks(vector<string>& companyNames, vector<double>& valu
     }
 }
 
+vector<vector<double>> predictFutureValues(const string& fileName) {
+    vector<vector<double>> dataForTraining = readDataFromFile(fileName+".csv");
+    vector<vector<double>> dataForPrediction = readDataFromFile(fileName+" Prediction.csv");
+    for (int n = 0; n < dataForPrediction.size(); n++) {
+        vector<vector<double>> yValues;
+        vector<vector<double>> dataForTrainingModel = dataForTraining;
+        cout << dataForTrainingModel.size() << endl; 
+        for (int i = 0; i < dataForTrainingModel.size(); i++) {
+            vector<double> test;
+            test.push_back(dataForTrainingModel[i].back());
+            dataForTrainingModel[i].pop_back();
+            yValues.push_back(test);
+        }
+        DataMatrix y = DataMatrix(yValues);
+        DataMatrix x = DataMatrix(dataForTrainingModel);
+        
+        CompanyForecast forecaster = CompanyForecast((((x.transpose() * x).inverse() * x.transpose()) * y).getThetaValues(), fileName);
+        dataForPrediction[n].push_back(forecaster.returnCompanyForecast(dataForPrediction[n]));
+        dataForTraining.push_back(dataForPrediction[n]);
+    }
+    return dataForTraining;
+}
+
 int main() {
     
     Data values;
@@ -86,8 +109,11 @@ int main() {
     vector<CompanyForecast> listOfCompanies;
     
     for (int loopCounter = 0; loopCounter < fileNames.size(); loopCounter++) {
-        vector<vector<double>> dataForPredictionModel = readDataFromFile(fileNames[loopCounter]+".csv");
+        vector<vector<double>> dataForPredictionModel = predictFutureValues(fileNames[loopCounter]);
         vector<vector<double>> yValues;
+        
+        cout << DataMatrix(dataForPredictionModel) << endl << endl;
+        
         for (int i = 0; i < dataForPredictionModel.size(); i++) {
             vector<double> test;
             test.push_back(dataForPredictionModel[i].back());
