@@ -18,10 +18,10 @@ using namespace std;
 
 
 vector<vector<double>> readDataFromFile(const string& fileName) {
-    ifstream fileInput (fileName);
+    ifstream fileInput (fileName+".csv");
     
     if (!fileInput) {
-        cout << "Data from the file " << fileName << " could not be read." << endl;
+        cout << "Data from the file \"" << fileName << "\" could not be read." << endl;
         exit(1);
     }
     
@@ -80,12 +80,12 @@ void showStockPortofolioPicks(vector<string>& companyNames, vector<double>& valu
 }
 
 vector<vector<double>> predictFutureValues(const string& fileName) {
-    vector<vector<double>> dataForTraining = readDataFromFile(fileName+".csv");
-    vector<vector<double>> dataForPrediction = readDataFromFile(fileName+" Prediction.csv");
+    vector<vector<double>> dataForTraining = readDataFromFile(fileName);
+    vector<vector<double>> dataForPrediction = readDataFromFile(fileName+" Prediction");
     for (int n = 0; n < dataForPrediction.size(); n++) {
         vector<vector<double>> yValues;
         vector<vector<double>> dataForTrainingModel = dataForTraining;
-        cout << dataForTrainingModel.size() << endl; 
+        cout << dataForTrainingModel.size() << endl;
         for (int i = 0; i < dataForTrainingModel.size(); i++) {
             vector<double> test;
             test.push_back(dataForTrainingModel[i].back());
@@ -109,7 +109,7 @@ int main() {
     vector<CompanyForecast> listOfCompanies;
     
     for (int loopCounter = 0; loopCounter < fileNames.size(); loopCounter++) {
-        vector<vector<double>> dataForPredictionModel = predictFutureValues(fileNames[loopCounter]);
+        vector<vector<double>> dataForPredictionModel = readDataFromFile(fileNames[loopCounter]); // readDataFromFile("Magic Number");
         vector<vector<double>> yValues;
         
         cout << DataMatrix(dataForPredictionModel) << endl << endl;
@@ -136,4 +136,6 @@ int main() {
     
     showStockPortofolioPicks(fileNames, predictedValues);
     
+    //        cout << (((x.transpose() * x).inverse() * x.transpose()) * y) << endl;
+    //    }
 }

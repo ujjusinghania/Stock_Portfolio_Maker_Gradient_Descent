@@ -14,18 +14,19 @@
 struct Data {
     
     std::vector<std::string> CSVNames = {
-//        "BJAUT IB Equity",
-//        "BHFC IB Equity",
-//        "BOS IB Equity",
-//        "EXID IB Equity",
-//        "MM IB Equity",
-//        "MSIL IB Equity",
-//        "MSS IB Equity",
-//        "MRF IB Equity",
-//        "TTMT IB Equity",
-//        "TTAN IB Equity",
-//        "Z IB Equity",
-        "BRIT IB Equity",
+        "BJAUT IB Equity",
+        "BHFC IB Equity",
+        "BOS IB Equity",
+        "EXID IB Equity",
+        "HMCL IB Equity",
+        "MM IB Equity",
+        "MSIL IB Equity",
+        "MSS IB Equity",
+        "MRF IB Equity",
+        "TTMT IB Equity",
+        "TTAN IB Equity",
+        "Z IB Equity",
+//        "BRIT IB Equity",
 //        "CLGT IB Equity",
 //        "DABUR IB Equity",
 //        "GCPL IB Equity",
@@ -34,7 +35,7 @@ struct Data {
 //        "MRCO IB Equity",
 //        "TGBL IB Equity",
 //        "UBBL IB Equity",
-        "BPCL IB Equity",
+//        "BPCL IB Equity",
 //        "COAL IB Equity",
 //        "HPCL IB Equity",
 //        "IOCL IB Equity",
@@ -89,7 +90,7 @@ struct Data {
 //        "TPWR IB Equity"
     };
     
-    std::string predictionDataCSV = "PredictionData.csv";
+    std::string predictionDataCSV = "PredictionData";
     
 };
 
