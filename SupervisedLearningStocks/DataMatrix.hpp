@@ -30,6 +30,9 @@ public:
     friend DataMatrix operator*(const DataMatrix& left, const DataMatrix& right);
     std::vector<double> getThetaValues();
     
+    int getRows() const;
+    int getColumns() const; 
+    
 private:
     std::vector<std::vector<double>> valueMatrix;
     int row;

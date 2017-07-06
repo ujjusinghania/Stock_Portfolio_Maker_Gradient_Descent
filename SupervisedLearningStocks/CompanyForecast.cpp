@@ -18,7 +18,7 @@ double CompanyForecast::returnCompanyForecast(const vector<double>& predictionVa
     if (predictionValues.size() == thetaValues.size()) {
         predictionPercentage = 0.0;
         for (size_t n = 0; n < thetaValues.size(); n++) {
-            predictionPercentage += predictionValues[n] * thetaValues[n];
+            predictionPercentage -= predictionValues[n] * thetaValues[n];
         }
     }
     return predictionPercentage;

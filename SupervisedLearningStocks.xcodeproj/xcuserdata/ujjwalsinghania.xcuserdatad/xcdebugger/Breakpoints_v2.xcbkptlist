@@ -10,13 +10,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SupervisedLearningStocks/DataMatrix.hpp"
-            timestampString = "519636956.296347"
+            timestampString = "520940069.235414"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "DataMatrix"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SupervisedLearningStocks/DataMatrix.cpp"
-            timestampString = "519623043.936391"
+            timestampString = "520940069.235638"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "15"
@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SupervisedLearningStocks/DataMatrix.cpp"
-            timestampString = "519725377.75554"
+            timestampString = "520940069.235924"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "114"
@@ -58,7 +58,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SupervisedLearningStocks/DataMatrix.cpp"
-            timestampString = "519725377.75554"
+            timestampString = "520940069.236173"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "115"
@@ -74,7 +74,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SupervisedLearningStocks/DataMatrix.cpp"
-            timestampString = "519623413.167587"
+            timestampString = "520940069.236439"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "26"
@@ -90,7 +90,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SupervisedLearningStocks/DataMatrix.cpp"
-            timestampString = "519623413.167587"
+            timestampString = "520940069.236582"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "39"
@@ -122,7 +122,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SupervisedLearningStocks/TrainingExample.cpp"
-            timestampString = "520237632.626875"
+            timestampString = "520408004.231439"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "20"
@@ -154,7 +154,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SupervisedLearningStocks/CompanyForecast.cpp"
-            timestampString = "518937230.079873"
+            timestampString = "520507467.639923"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "30"
@@ -170,7 +170,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SupervisedLearningStocks/DataMatrix.cpp"
-            timestampString = "519725377.75554"
+            timestampString = "520940069.236851"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "143"
@@ -186,7 +186,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SupervisedLearningStocks/DataMatrix.cpp"
-            timestampString = "519725377.75554"
+            timestampString = "520940069.236964"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "133"
@@ -202,7 +202,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SupervisedLearningStocks/DataMatrix.cpp"
-            timestampString = "519630964.983605"
+            timestampString = "520940069.237073"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "77"
@@ -218,7 +218,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SupervisedLearningStocks/DataMatrix.cpp"
-            timestampString = "519632635.634202"
+            timestampString = "520940069.237181"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "92"
@@ -234,7 +234,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SupervisedLearningStocks/DataMatrix.cpp"
-            timestampString = "519632635.634202"
+            timestampString = "520940069.237302"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "86"
@@ -250,7 +250,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SupervisedLearningStocks/DataMatrix.cpp"
-            timestampString = "519632773.164511"
+            timestampString = "520940069.237407"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "95"
@@ -266,7 +266,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SupervisedLearningStocks/DataMatrix.cpp"
-            timestampString = "519633291.43854"
+            timestampString = "520940069.237512"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "98"
@@ -282,7 +282,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SupervisedLearningStocks/DataMatrix.cpp"
-            timestampString = "519632836.427799"
+            timestampString = "520940069.237617"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "90"
@@ -298,7 +298,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SupervisedLearningStocks/DataMatrix.cpp"
-            timestampString = "519632920.947748"
+            timestampString = "520940069.237719"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "96"
@@ -314,11 +314,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SupervisedLearningStocks/main.cpp"
-            timestampString = "520239944.635203"
+            timestampString = "521026817.664256"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
             landmarkName = "predictFutureValues(const string&amp; fileName)"
             landmarkType = "9">
          </BreakpointContent>
@@ -330,27 +330,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SupervisedLearningStocks/main.cpp"
-            timestampString = "520239944.637255"
+            timestampString = "521026817.664423"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
-            landmarkName = "main()"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SupervisedLearningStocks/main.cpp"
-            timestampString = "520239944.637852"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99"
+            startingLineNumber = "166"
+            endingLineNumber = "166"
             landmarkName = "predictFutureValues(const string&amp; fileName)"
             landmarkType = "9">
          </BreakpointContent>
@@ -362,12 +346,124 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SupervisedLearningStocks/main.cpp"
-            timestampString = "520239944.638385"
+            timestampString = "521026817.664564"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102"
-            landmarkName = "predictFutureValues(const string&amp; fileName)"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "returnBestThetaValues(const DataMatrix&amp; X, const DataMatrix&amp; Y, const vector&lt;vector&lt;double&gt;&gt;&amp; testExamples)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SupervisedLearningStocks/main.cpp"
+            timestampString = "521026817.664699"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "returnBestThetaValues(const DataMatrix&amp; X, const DataMatrix&amp; Y, const vector&lt;vector&lt;double&gt;&gt;&amp; testExamples)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SupervisedLearningStocks/main.cpp"
+            timestampString = "521026817.664831"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "returnBestThetaValues(const DataMatrix&amp; X, const DataMatrix&amp; Y, const vector&lt;vector&lt;double&gt;&gt;&amp; testExamples)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SupervisedLearningStocks/main.cpp"
+            timestampString = "521026817.664961"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "returnBestThetaValues(const DataMatrix&amp; X, const DataMatrix&amp; Y, const vector&lt;vector&lt;double&gt;&gt;&amp; testExamples)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SupervisedLearningStocks/main.cpp"
+            timestampString = "521026817.665089"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "returnBestThetaValues(const DataMatrix&amp; X, const DataMatrix&amp; Y, const vector&lt;vector&lt;double&gt;&gt;&amp; testExamples)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SupervisedLearningStocks/main.cpp"
+            timestampString = "521026817.665219"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "getCostFunction(const vector&lt;double&gt;&amp; temporaryThetaValues, const vector&lt;vector&lt;double&gt;&gt;&amp; testExamples)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SupervisedLearningStocks/main.cpp"
+            timestampString = "521026817.665347"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "returnBestThetaValues(const DataMatrix&amp; X, const DataMatrix&amp; Y, const vector&lt;vector&lt;double&gt;&gt;&amp; testExamples)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SupervisedLearningStocks/main.cpp"
+            timestampString = "521026817.665474"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "returnBestThetaValues(const DataMatrix&amp; X, const DataMatrix&amp; Y, const vector&lt;vector&lt;double&gt;&gt;&amp; testExamples)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>

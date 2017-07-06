@@ -150,3 +150,11 @@ vector<double> DataMatrix::getThetaValues() {
     }
     return returnValue; 
 }
+
+int DataMatrix::getRows() const {
+    return row; 
+}
+
+int DataMatrix::getColumns() const {
+    return column;
+}

@@ -12,9 +12,9 @@
 #include <stdio.h>
 
 struct Constants {
-    double alpha = 0.0005;
+    double alpha = 0.00003;
     double benchmark = 0.000001;
-    double thetaValue = 1;
+    double thetaValue = 0.5;
 };
 
 #endif /* ConstantValues_hpp */
