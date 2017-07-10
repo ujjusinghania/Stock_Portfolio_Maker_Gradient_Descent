@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D91E1FA61F0F730100F9C363 /* HelperFunctions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D91E1FA51F0F730100F9C363 /* HelperFunctions.cpp */; };
 		D9920F391EEE43E60085035D /* CompanyForecast.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9920F371EEE43E60085035D /* CompanyForecast.cpp */; };
 		D9E73CA91EE684B000693AD9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9E73CA81EE684B000693AD9 /* main.cpp */; };
 		D9E73CB11EE684C800693AD9 /* DataMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9E73CAF1EE684C800693AD9 /* DataMatrix.cpp */; };
@@ -28,6 +29,8 @@
 
 /* Begin PBXFileReference section */
 		D910CC3E1EE7E10F00849E59 /* README.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = README.rtf; sourceTree = "<group>"; };
+		D91E1FA41F0F728E00F9C363 /* HelperFunctions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelperFunctions.h; sourceTree = "<group>"; };
+		D91E1FA51F0F730100F9C363 /* HelperFunctions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HelperFunctions.cpp; sourceTree = "<group>"; };
 		D93966C31EF904EF00E6B257 /* Tester Code.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "Tester Code.rtf"; sourceTree = "<group>"; };
 		D9920F371EEE43E60085035D /* CompanyForecast.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CompanyForecast.cpp; sourceTree = "<group>"; };
 		D9920F381EEE43E60085035D /* CompanyForecast.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CompanyForecast.hpp; sourceTree = "<group>"; };
@@ -54,14 +57,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D93966C41EF9276700E6B257 /* Prediction Model Data Types */ = {
+		D93966C41EF9276700E6B257 /* Helper Functions and Classes */ = {
 			isa = PBXGroup;
 			children = (
 				D9920F371EEE43E60085035D /* CompanyForecast.cpp */,
 				D9920F381EEE43E60085035D /* CompanyForecast.hpp */,
-				D9920F3B1EEE4C270085035D /* PortfolioValues.h */,
+				D91E1FA51F0F730100F9C363 /* HelperFunctions.cpp */,
+				D91E1FA41F0F728E00F9C363 /* HelperFunctions.h */,
 			);
-			name = "Prediction Model Data Types";
+			name = "Helper Functions and Classes";
 			sourceTree = "<group>";
 		};
 		D9E73C9C1EE684B000693AD9 = {
@@ -84,21 +88,22 @@
 			isa = PBXGroup;
 			children = (
 				D9E73CA81EE684B000693AD9 /* main.cpp */,
-				D9E73CB21EE684CC00693AD9 /* DataMatrix - Normalized Batch Gradient Descent */,
+				D9920F3B1EEE4C270085035D /* PortfolioValues.h */,
+				D9E73CB21EE684CC00693AD9 /* DataMatrix - Linear Matrix Functions */,
 				D9F68FA81EE90422000AA8E2 /* MLDataTypes - Batch Gradient Descent */,
-				D93966C41EF9276700E6B257 /* Prediction Model Data Types */,
+				D93966C41EF9276700E6B257 /* Helper Functions and Classes */,
 				D910CC3E1EE7E10F00849E59 /* README.rtf */,
 			);
 			path = SupervisedLearningStocks;
 			sourceTree = "<group>";
 		};
-		D9E73CB21EE684CC00693AD9 /* DataMatrix - Normalized Batch Gradient Descent */ = {
+		D9E73CB21EE684CC00693AD9 /* DataMatrix - Linear Matrix Functions */ = {
 			isa = PBXGroup;
 			children = (
 				D9E73CAF1EE684C800693AD9 /* DataMatrix.cpp */,
 				D9E73CB01EE684C800693AD9 /* DataMatrix.hpp */,
 			);
-			name = "DataMatrix - Normalized Batch Gradient Descent";
+			name = "DataMatrix - Linear Matrix Functions";
 			sourceTree = "<group>";
 		};
 		D9F68FA81EE90422000AA8E2 /* MLDataTypes - Batch Gradient Descent */ = {
@@ -177,6 +182,7 @@
 				D9F68FAB1EE90438000AA8E2 /* TrainingExample.cpp in Sources */,
 				D9920F391EEE43E60085035D /* CompanyForecast.cpp in Sources */,
 				D9F68FAE1EE90444000AA8E2 /* Hypothesis.cpp in Sources */,
+				D91E1FA61F0F730100F9C363 /* HelperFunctions.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

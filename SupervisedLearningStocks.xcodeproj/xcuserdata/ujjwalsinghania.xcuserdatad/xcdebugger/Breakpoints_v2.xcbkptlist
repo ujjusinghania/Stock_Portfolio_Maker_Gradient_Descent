@@ -138,11 +138,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SupervisedLearningStocks/CompanyForecast.hpp"
-            timestampString = "518931541.376555"
+            timestampString = "521106569.954002"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
             landmarkName = "CompanyForecast"
             landmarkType = "3">
          </BreakpointContent>
@@ -154,13 +154,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SupervisedLearningStocks/CompanyForecast.cpp"
-            timestampString = "520507467.639923"
+            timestampString = "521106569.954113"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "CompanyForecast::returnCompanyForecast(const vector&lt;double&gt;&amp; predictionValues)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -314,55 +314,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SupervisedLearningStocks/main.cpp"
-            timestampString = "521026817.664256"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "147"
-            endingLineNumber = "147"
-            landmarkName = "predictFutureValues(const string&amp; fileName)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SupervisedLearningStocks/main.cpp"
-            timestampString = "521026817.664423"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "166"
-            endingLineNumber = "166"
-            landmarkName = "predictFutureValues(const string&amp; fileName)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SupervisedLearningStocks/main.cpp"
-            timestampString = "521026817.664564"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "returnBestThetaValues(const DataMatrix&amp; X, const DataMatrix&amp; Y, const vector&lt;vector&lt;double&gt;&gt;&amp; testExamples)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SupervisedLearningStocks/main.cpp"
-            timestampString = "521026817.664699"
+            timestampString = "521226284.113255"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "41"
@@ -378,11 +330,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SupervisedLearningStocks/main.cpp"
-            timestampString = "521026817.664831"
+            timestampString = "521226284.11493"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
             landmarkName = "returnBestThetaValues(const DataMatrix&amp; X, const DataMatrix&amp; Y, const vector&lt;vector&lt;double&gt;&gt;&amp; testExamples)"
             landmarkType = "9">
          </BreakpointContent>
@@ -394,23 +346,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SupervisedLearningStocks/main.cpp"
-            timestampString = "521026817.664961"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
-            landmarkName = "returnBestThetaValues(const DataMatrix&amp; X, const DataMatrix&amp; Y, const vector&lt;vector&lt;double&gt;&gt;&amp; testExamples)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SupervisedLearningStocks/main.cpp"
-            timestampString = "521026817.665089"
+            timestampString = "521226284.115661"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "56"
@@ -426,27 +362,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SupervisedLearningStocks/main.cpp"
-            timestampString = "521026817.665219"
+            timestampString = "521226284.117956"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "getCostFunction(const vector&lt;double&gt;&amp; temporaryThetaValues, const vector&lt;vector&lt;double&gt;&gt;&amp; testExamples)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SupervisedLearningStocks/main.cpp"
-            timestampString = "521026817.665347"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
             landmarkName = "returnBestThetaValues(const DataMatrix&amp; X, const DataMatrix&amp; Y, const vector&lt;vector&lt;double&gt;&gt;&amp; testExamples)"
             landmarkType = "9">
          </BreakpointContent>
@@ -458,11 +378,59 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SupervisedLearningStocks/main.cpp"
-            timestampString = "521026817.665474"
+            timestampString = "521226284.118787"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "returnBestThetaValues(const DataMatrix&amp; X, const DataMatrix&amp; Y, const vector&lt;vector&lt;double&gt;&gt;&amp; testExamples)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SupervisedLearningStocks/main.cpp"
+            timestampString = "521226284.11954"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "getCostFunction(const vector&lt;double&gt;&amp; temporaryThetaValues, const vector&lt;vector&lt;double&gt;&gt;&amp; testExamples)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SupervisedLearningStocks/main.cpp"
+            timestampString = "521226284.120301"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "returnBestThetaValues(const DataMatrix&amp; X, const DataMatrix&amp; Y, const vector&lt;vector&lt;double&gt;&gt;&amp; testExamples)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SupervisedLearningStocks/main.cpp"
+            timestampString = "521226284.121067"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
             landmarkName = "returnBestThetaValues(const DataMatrix&amp; X, const DataMatrix&amp; Y, const vector&lt;vector&lt;double&gt;&gt;&amp; testExamples)"
             landmarkType = "9">
          </BreakpointContent>

@@ -5,6 +5,7 @@
 //  Created by Ujjwal Singhania on 6/12/17.
 //  Copyright © 2017 Ujjwal Singhania. All rights reserved.
 //
+//  A class that is primarily used for prediction after the execution of the gradient descent algorithm.
 
 #ifndef CompanyForecast_hpp
 #define CompanyForecast_hpp
