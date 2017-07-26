@@ -5,6 +5,7 @@
 //  Created by Ujjwal Singhania on 6/8/17.
 //  Copyright © 2017 Ujjwal Singhania. All rights reserved.
 //
+//  Values that define constants that are being used by the Gradient Descent Algorithm. 
 
 #ifndef ConstantValues_hpp
 #define ConstantValues_hpp

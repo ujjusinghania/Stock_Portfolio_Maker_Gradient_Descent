@@ -12,7 +12,11 @@
 #include <math.h>
 using namespace std;
 
-// To get computed Y - multiplication between theta and respective features of a given training example -> (h(theta, x(i) [i'th training example])
+/*
+ 
+ To get computed Y - multiplication between theta and respective features of a given training example -> (h(theta, x(i) [i'th training example])
+ 
+ */
 
 double Hypothesis::getComputedY(const std::vector<double>& newThetaValues, const std::vector<double>& featureList) {
     double sum = 0.0;
@@ -22,7 +26,9 @@ double Hypothesis::getComputedY(const std::vector<double>& newThetaValues, const
     return sum;
 }
 
-/* To get the square sum of (actual y - computed y) - aka the costFunction.
+/*
+ 
+ To get the square sum of (actual y - computed y) - aka the costFunction.
  
  ∑((h(theta, x(i) [i'th training example]) - y(i) [y value of i'th training example]) * x(i, j) [j'th feature of i'th training example]) -> from i = 0 to numberOfTrainingExamples;
  

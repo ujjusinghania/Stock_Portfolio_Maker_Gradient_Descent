@@ -5,6 +5,7 @@
 //  Created by Ujjwal Singhania on 6/6/17.
 //  Copyright © 2017 Ujjwal Singhania. All rights reserved.
 //
+//  Implementation of the DataMatrix.hpp file.
 
 #include "DataMatrix.hpp"
 #include <iostream>

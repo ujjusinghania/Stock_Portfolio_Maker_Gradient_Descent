@@ -5,6 +5,7 @@
 //  Created by Ujjwal Singhania on 6/6/17.
 //  Copyright © 2017 Ujjwal Singhania. All rights reserved.
 //
+//  A class that is primarily used for linear algebra calculations - this class is essentially a definition of a matrix. 
 
 #ifndef DataMatrix_hpp
 #define DataMatrix_hpp
