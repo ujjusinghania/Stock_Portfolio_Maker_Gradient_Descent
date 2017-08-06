@@ -28,9 +28,11 @@ double getCostFunction(const vector<double>& temporaryThetaValues, const vector<
     
     for (int index = 0; index < testExamples.size(); index++) {
         double multiplySum = 0.0;
+        // Calculating the cost function error for each data point.
         for (int multiplyIndex = 0; multiplyIndex < testExamples[0].size()-1; multiplyIndex++) {
             multiplySum += temporaryThetaValues[multiplyIndex] * testExamples[index][multiplyIndex];
         }
+        // Calculating the total cost function error.
         sum += (testExamples[index][testExamples[0].size()-1] - multiplySum) * (testExamples[index][testExamples[0].size()-1] - multiplySum);
     }
     
@@ -43,24 +45,27 @@ vector<double> returnBestThetaValues(const DataMatrix& X, const DataMatrix& Y, c
     vector<double> thetaValues = vector<double>(X.getColumns()); // Insert number of factors.
     for (int index = 0; index < constantValues.PermutationsValues.size(); index++) {
         
+        // Create a new DataMatrix with all the rows from X and columns specified in the current permutation.
         vector<vector<double>> permutedX = {};
         
-        for (int rows = 0; rows < X.getRows(); rows++) {
+        for (int row = 0; row < X.getRows(); row++) {
             vector<double> rowValues;
             for (int permutationIndex = 0; permutationIndex < constantValues.PermutationsValues[index].size(); permutationIndex++) {
-                rowValues.push_back(X(rows, constantValues.PermutationsValues[index][permutationIndex]));
+                rowValues.push_back(X(row, constantValues.PermutationsValues[index][permutationIndex]));
             }
             permutedX.push_back(rowValues);
         }
         
         DataMatrix newX = DataMatrix(permutedX);
-        vector<double> temporaryValue = (((newX.transpose() * newX).inverse() * newX.transpose()) * Y).getThetaValues();
+        vector<double> thetaValues = (((newX.transpose() * newX).inverse() * newX.transpose()) * Y).getThetaValues();
         
+        // temporaryThetaValues have values at the indexes specified in the current permutation.
         vector<double> temporaryThetaValues = vector<double>(X.getColumns());
         for (int permutationIndex = 0; permutationIndex < constantValues.PermutationsValues[index].size(); permutationIndex++) {
-            temporaryThetaValues[constantValues.PermutationsValues[index][permutationIndex]] = temporaryValue[permutationIndex];
+            temporaryThetaValues[constantValues.PermutationsValues[index][permutationIndex]] = thetaValues[permutationIndex];
         }
         
+        // If the current cost function is greater than the newer cost function, then the saved theta values for the stock are changed to the new values.
         double newCostFunction = getCostFunction(temporaryThetaValues, testExamples);
         
         if (costFunctionValue == -1) {
@@ -99,10 +104,10 @@ int main() {
             yValues.push_back(test);
         }
         
-//        DataMatrix y = DataMatrix(yValues);
-//        DataMatrix x = DataMatrix(dataForPredictionModel);
-//
-//        listOfCompanies.push_back(CompanyForecast((((x.transpose() * x).inverse() * x.transpose()) * y).getThetaValues(), fileNames[loopCounter]));
+        //        DataMatrix y = DataMatrix(yValues);
+        //        DataMatrix x = DataMatrix(dataForPredictionModel);
+        //
+        //        listOfCompanies.push_back(CompanyForecast((((x.transpose() * x).inverse() * x.transpose()) * y).getThetaValues(), fileNames[loopCounter]));
         
         cout << "Company Name: " << fileNames[loopCounter] << endl;
         
