@@ -15,36 +15,6 @@ using namespace std;
 
 DataMatrix::DataMatrix(const int row, const int column, const int value) : row(row), column(column), valueMatrix(row, vector<double>(column, value)) {}
 
-// Complete this constructor.
-//DataMatrix::DataMatrix(const std::string& fileName) {
-//    ifstream dataFile = ifstream(fileName);
-//    
-//    if (!dataFile) {
-//        cout << "Couldn't access the data file" << endl;
-//        return;
-//    }
-//    
-//    string value = "";
-//    int matrixIndex = 0;
-//    vector<double> dataVector = {};
-//    while(dataFile >> value) {
-//        dataVector.push_back(stod(value));
-//        cout << value << "|";
-//        if (value == "\n") {
-//            matrixIndex++;
-//            valueMatrix.push_back(dataVector);
-//            dataVector = {};
-//            cout << endl;
-//        }
-//    }
-//    
-//    row = valueMatrix.size();
-// //   column = valueMatrix[0].size();
-//    isValid = true; 
-//}
-//
-//
-
 DataMatrix::DataMatrix(const std::vector<std::vector<double>>& values): valueMatrix(values), row(values.size()), column(values[0].size()) {}
 
 DataMatrix::DataMatrix(const int row, const int column, const std::vector<std::vector<double>>& values): row(row), column(column) {
